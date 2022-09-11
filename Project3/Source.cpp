@@ -22,6 +22,24 @@ public:
     {
         delete[]name;
     }
+    void Print()
+    {
+        cout << "Name: " << name << "\nPatroll: " << patroll << endl;
+    }
+    void Init()
+    {
+        char buff[20];
+        cout << "Enter name - > ";
+        cin >> buff;
+        if (name != nullptr)
+        {
+            delete[]name;
+        }
+        name = new char[strlen(buff) + 1];
+        strcpy_s(name, strlen(buff) + 1, buff);
+        cout << "Enter patroll -> ";
+        cin >> patroll;
+    }
 };
 
 int main()
