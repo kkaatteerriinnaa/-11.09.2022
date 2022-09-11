@@ -48,5 +48,6 @@ public:
 
 int main()
 {
-
+    Point obj1(1, 2);
+    obj1.Print();
 }
