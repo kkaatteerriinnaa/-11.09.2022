@@ -8,6 +8,14 @@ class Point
 public:
 };
 
+class Car
+{
+    char* name;
+    int patroll;
+public:
+
+};
+
 int main()
 {
 
